@@ -1,0 +1,30 @@
+CAR CLASSIFICATION CHALLENGES
+
+READ ME
+1. Build OpenCV 3.3.0
+$git clone https://github.com/opencv/opencv
+$cd opencv
+$git checkout 3.3.0
+
+Then download opencv_contrib
+$git clone https://github.com/opencv/opencv_contrib
+$cd opencv_contrib
+$git checkout 3.3.0
+
+Then cd back to Opencv to build with cmake
+
+$cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local -DINSTALL_PYTHON_EXAMPLES=ON -DINSTALL_C_EXAMPLES=OFF -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=OFF -D WITH_OPENGL=OFF -D BUILD_PROTOBUF=OFF -D BUILD_opencv_dnn=OFF -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DENABLE_CXX11=ON -DENABLE_PRECOMPILED_HEADERS=OFF -DBUILD_EXAMPLES=ON -DBUILD_opencv_legacy=OFF ..
+
+2. Buid Google Protobuff 3.6.0
+$git clone https://github.com/protocolbuffers/protobuf
+$cd protobuf
+$git checkout 3.6.0
+
+3. Buid Caffe Framework
+Following this link: http://caffe.berkeleyvision.org/installation.html
+
+3. Build my code 
+$git clone 
+$cd carmodel
+$load Xcode project
+Then build from Xcode
