@@ -24,7 +24,8 @@ $git checkout 3.6.0
 Following this link: http://caffe.berkeleyvision.org/installation.html
 
 3. Build my code 
-$git clone 
-$cd carmodel
-$load Xcode project
-Then build from Xcode
+$git clone https://github.com/fjfo/carsDetect.git
+$cd carsDetect
+$cmake .
+$make
+$./carmodel
